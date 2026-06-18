@@ -1,35 +1,22 @@
 <div class="chat-main">
   <div class="chat-header">
     <div class="chat-room-name">
-      hogefuga
+      <%= @room.name %>
     </div>
     <div class="chat-room-exit">
-      <a href="#">チャットを終了する</a>
+      <%= link_to "チャットを終了する", room_path(@room), data: { turbo_method: :delete } %>
     </div>
   </div>
   <div class="chat-messages">
-    <div class="messages">
-      <div class="messages-inf">
-        <div class="messages-user">Tom</div>
-        <div class="messages-date">2026/06/18(Thr) 13:00:00</div>
-      </div>
-      <div class="messages-content">おはよう</div>
-    </div>
-    <div class="messages">
-      <div class="messages-inf">
-        <div class="messages-user">Tom</div>
-        <div class="messages-date">2026/06/18(Thr) 13:00:00</div>
-      </div>
-      <div class="messages-content">おはよう</div>
-    </div>
+    <%= render partial: "message", collection: @messages %>
   </div>
   <div class="chat-input">
-    <div class="form">
+    <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f|%>
       <div class="form-input">
-        <input class="send-content" type="text", placeholder="type a message">
+        <%= f.text_field :content, class: "send-content", placeholder: "type a message" %>
         <label class="image-btn">画像</label>
       </div>
-      <input class="send-btn" type="submit", value="送信">
-    </div>
+      <%= f.submit "送信", class: "send-btn"%>
+    <% end %>
   </div>
 </div>

@@ -10,7 +10,7 @@
   <div class="sidebar-main">
     <% current_user.rooms.each do |room| %>
       <div class="chatroom">
-        <%= room.name %>
+        <%= link_to room.name, room_messages_path(room) %>
       </div>
     <% end %>
   </div>
