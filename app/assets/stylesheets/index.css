@@ -1,0 +1,182 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+/* サイドバーとチャット画面サイズ決め */
+
+.side-bar {
+  width: 300px;
+  height: 100%;
+  background-color: #253141;
+}
+
+.main-chat {
+  width: calc(100vw - 300px);
+  height: 100%;
+  background-color: #fff;
+}
+
+/* サイドバー */
+.chat-sidebar {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-header {
+  height: 100px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #253141;
+}
+
+/* サイドバーヘッダー */
+.user-page {
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.chat-create-btn {
+  font-size: 10px;
+  color: deepskyblue;
+  text-decoration: none;
+  padding: 14px;
+  border: 1px solid lightblue;
+}
+/* サイドバーメイン */
+
+.sidebar-main {
+  height: calc(100vh - 100px);
+  width: 100%;
+  padding: 0 20px;
+  background-color: #2f3e51;
+  overflow-y: hidden;
+}
+
+.chatroom {
+  padding: 20px 20px 40px;
+}
+
+.chatroom a {
+  text-decoration: none;
+  color: white;
+}
+
+/* メインチャット画面 */
+.chat-main {
+  width: 100%;
+  height: 100%;
+}
+
+/* チャット画面ヘッダー */
+.chat-header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-room-name {
+  padding-top: 36px;
+  font-size: 24px;
+  color: #333;
+}
+
+.chat-room-exit {
+  margin: 40px;
+}
+
+.chat-room-exit a {
+  text-decoration: none;
+  border: 1px solid darkred;
+  color: darkred;
+  padding: 20px;
+}
+/* チャット画面メイン */
+
+.chat-messages {
+  width: 100%;
+  height: calc(100vh - 100px - 90px);
+  background-color: #fafafa;
+  padding: 46px 40px 0;
+}
+
+.messages {
+  padding-bottom: 40px;
+  overflow-y: hidden;
+}
+
+.messages-inf {
+  display: flex;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.messages-user {
+  font-size: 16px;
+  color: #434a54;
+}
+
+.messages-date {
+  font-size: 12px;
+  color: #999;
+}
+
+.messages-content {
+  font-size: 14px;
+  color: #434a54;
+}
+
+/* チャット入力スペース */
+.chat-input {
+  width: 100%;
+  height: 90px;
+  background-color: #dddddd;
+  padding: 20px 40px;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.form-input {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  margin-right: 15px;
+}
+
+.send-content {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  padding-left: 10px;
+  border: none;
+}
+
+.send-btn {
+  height: 50px;
+  font-size: 16px;
+  color: white;
+  padding: 0 20px;
+  background-color: #38aef0;
+  border: none;
+}
+
+.image-btn {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
