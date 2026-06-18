@@ -41,12 +41,12 @@
   text-decoration: none;
 }
 
-.chat-create-btn {
+.chat-create a {
   font-size: 10px;
   color: deepskyblue;
   text-decoration: none;
-  padding: 14px;
   border: 1px solid lightblue;
+  padding: 14px;
 }
 /* サイドバーメイン */
 
@@ -60,12 +60,14 @@
 
 .chatroom {
   padding: 20px 20px 40px;
-}
-
-.chatroom a {
   text-decoration: none;
   color: white;
 }
+
+/* .chatroom a {
+  text-decoration: none;
+  color: white;
+} */
 
 /* メインチャット画面 */
 .chat-main {
